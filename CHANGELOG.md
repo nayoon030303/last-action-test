@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/nayoon030303/action-test/compare/v1.0.0...v1.0.1) (2022-08-30)
+
+
+### Bug Fixes
+
+* test merge ([#1](https://github.com/nayoon030303/action-test/issues/1)) ([ac323c6](https://github.com/nayoon030303/action-test/commit/ac323c668de262c1a94dada2d891b6d38efc1a2d))
+
 # 1.0.0 (2022-08-30)
 
 
