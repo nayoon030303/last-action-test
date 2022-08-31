@@ -16,6 +16,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v3
+      with:
+        persist-credentials: false
+
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16.x
+        registry-url: https://npm.pkg.github.com
+        scope: '@tportio'
+
+    - name: Cache node modules
+      id: cache-npm
+      uses: actions/cache@v3
+      env:
+        cache-name: cache-node-modules
+      with:
+        path: ${{env.CACHED_DEPENDENCY_PATHS}}
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+
+    - if: steps.cache-npm.outputs.cache-hit != 'true'
+      run: npm ci
+
+    - run: npm run build:dev
+
     - name: Create Source Bundle
       run: |
         git archive --format=zip develop -o $PREFIX_NAME.zip
