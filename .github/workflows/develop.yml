@@ -16,10 +16,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # - name: Create Source Bundle
-    #   run: |
-    #     git archive --format=zip v$PREFIX_NAME -o $PREFIX_NAME.zip
-    #     zip -urq $PREFIX_NAME.zip dist
+    - name: Create Source Bundle
+      run: |
+        git archive --format=zip -o $PREFIX_NAME.zip
+        zip -urq $PREFIX_NAME.zip dist
 
     - name: Head Commit
       run: echo "${{github.event.head_commit.message}}"
