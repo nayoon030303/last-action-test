@@ -18,7 +18,7 @@ jobs:
     steps:
     - name: Create Source Bundle
       run: |
-        git archive --format=zip -o $PREFIX_NAME.zip
+        git archive --format=zip develop -o $PREFIX_NAME.zip
         zip -urq $PREFIX_NAME.zip dist
 
     - name: Head Commit
