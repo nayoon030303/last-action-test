@@ -1,2 +1,3 @@
 - 스쿼시 머지 테스트 feat -> dev (잘됨) dev->master(둘다 동작 안함)
-- 일반 머지 테스트
+- 일반 머지 테스트 feat -> dev (잘됨) dev->master(잘됨)
+- branch->dev 스쿼시, dev->master 일반
