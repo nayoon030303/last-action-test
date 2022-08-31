@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/nayoon030303/action-test/compare/v1.0.2...v1.1.0) (2022-08-31)
+
+
+### Features
+
+* master no squash ([#5](https://github.com/nayoon030303/action-test/issues/5)) ([0e7d384](https://github.com/nayoon030303/action-test/commit/0e7d384c803a0f71d67435e187d3e7d0ff1f4056))
+
 ## [1.0.2](https://github.com/nayoon030303/action-test/compare/v1.0.1...v1.0.2) (2022-08-30)
 
 
